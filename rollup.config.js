@@ -15,11 +15,10 @@ if (process.env.NODE_ENV !== 'production') {
       open: true,
       contentBase: '.',
     }),
-  );
-  plugins.push(
+    
     livereload({
       watch: 'dist',
-    }),
+    })
   );
 }
 

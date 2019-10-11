@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caffeinalab/siriwavejs.git"
+    "url": "git+https://github.com/Mill3/siriwavejs.git"
   },
   "keywords": [
     "siri",
@@ -22,9 +22,9 @@
   "author": "Flavio De Stefano",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/caffeinalab/siriwavejs/issues"
+    "url": "https://github.com/Mill3/siriwavejs/issues"
   },
-  "homepage": "https://github.com/caffeinalab/siriwavejs#readme",
+  "homepage": "https://github.com/Mill3/siriwavejs#readme",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
@@ -42,7 +42,6 @@
     "rollup-plugin-uglify": "^6.0.0"
   },
   "dependencies": {
-    "lerp": "^1.0.3",
-    "raf": "^3.4.0"
+    "lerp": "^1.0.3"
   }
 }

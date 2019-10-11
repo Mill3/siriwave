@@ -1,4 +1,3 @@
-import raf from 'raf';
 import _lerp from 'lerp';
 
 function _classCallCheck(instance, Constructor) {
@@ -363,7 +362,7 @@ function () {
      * Maximum height for a single wave
      */
 
-    this.heightMax = Number(this.height / 2) - 6;
+    this.heightMax = Number(this.height / 2);
     /**
      * Color of the wave (used in Classic iOS)
      */
@@ -568,7 +567,7 @@ function () {
       this._draw();
 
       this.phase = (this.phase + Math.PI / 2 * this.speed) % (2 * Math.PI);
-      raf(this.startDrawCycle.bind(this), 20);
+      requestAnimationFrame(this.startDrawCycle.bind(this));
     }
     /* API */
 

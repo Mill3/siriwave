@@ -1,4 +1,3 @@
-import raf from 'raf';
 import lerp from 'lerp';
 import Curve from './curve';
 import iOS9Curve from './ios9curve';
@@ -78,7 +77,7 @@ export default class SiriWave {
     /**
      * Maximum height for a single wave
      */
-    this.heightMax = Number(this.height / 2) - 6;
+    this.heightMax = Number(this.height / 2);
 
     /**
      * Color of the wave (used in Classic iOS)
@@ -223,7 +222,7 @@ export default class SiriWave {
     this._draw();
     this.phase = (this.phase + (Math.PI / 2) * this.speed) % (2 * Math.PI);
 
-    raf(this.startDrawCycle.bind(this), 20);
+    requestAnimationFrame(this.startDrawCycle.bind(this));
   }
 
   /* API */
